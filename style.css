@@ -1,0 +1,28 @@
+:root {
+  --first-color: #132743;
+  --second-color: #ffcbcb;
+  --third-color: #ffb5b5;
+  --btn-color: #407088;
+  --btn-border: #254555;
+}
+
+* {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--second-color) !important;
+}
+
+body {
+  background-color: var(--first-color) !important;
+}
+
+section#filters-container {
+  height: 100vh;
+}
+
+.cs-btn, .cs-btn:hover, .cs-btn:focus, .cs-btn:active {
+  background-color: var(--btn-color) !important;
+}
+
+ul li {
+  padding: 20px;
+}
