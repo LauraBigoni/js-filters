@@ -26,8 +26,8 @@
         <div class="col-12">
           <div id="image-holder" class="d-flex align-items-center flex-column">
             <figure>
-              <img id="image-preview" class="rounded" src="https://picsum.photos/500/400.jpg"
-                alt="Your Downloaded Image" height="400" width="500">
+              <img class="image-preview rounded" src="https://picsum.photos/500/400.jpg" alt="Your Downloaded Image"
+                height="400" width="500">
             </figure>
             <div class="input-group w-50 mb-2">
               <button class="btn cs-btn" type="button" id="submit" onclick="changeImage()">Submit</button>
@@ -38,35 +38,36 @@
         </div>
         <div class="col-12">
           <div id="filters">
+            <h4 class="text-center">Click on the filter name to modify the image</h4>
             <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
               <li class="d-flex flex-column align-items-center">
-                <label for="contrast" class="form-label">Contrast</label>
-                <input type="range" class="form-range" id="contrast" min="0" max="100" value="100" step="1"
+                <label for="contrast" class="text-center form-label mb-3" role="button">Contrast</label>
+                <input type="range" class="d-none form-range" id="contrast" min="0" max="100" value="100" step="1"
                   data-filter="contrast" data-scale="%" onchange="applyFilter()">
               </li>
               <li class="d-flex flex-column align-items-center">
-                <label for="greyscale" class="form-label">Greyscale</label>
-                <input type="range" class="form-range" id="greyscale" min="0" max="100" value="0" step="1"
-                  data-filter="greyscale" data-scale="%" onchange="applyFilter()">
+                <label for="grayscale" class="text-center form-label mb-3" role="button">Grayscale</label>
+                <input type="range" class="d-none form-range" id="grayscale" min="0" max="100" value="0" step="1"
+                  data-filter="grayscale" data-scale="%" onchange="applyFilter()">
               </li>
               <li class="d-flex flex-column align-items-center">
-                <label for="brightness" class="form-label">Brightness</label>
-                <input type="range" class="form-range" id="brightness" min="0" max="100" value="0" step="1"
+                <label for="brightness" class="text-center form-label mb-3" role="button">Brightness</label>
+                <input type="range" class="d-none form-range" id="brightness" min="0" max="100" value="100" step="1"
                   data-filter="brightness" data-scale="%" onchange="applyFilter()">
               </li>
               <li class="d-flex flex-column align-items-center">
-                <label for="saturate" class="form-label">Saturation</label>
-                <input type="range" class="form-range" id="saturate" min="1" max="100" value="100" step="1"
+                <label for="saturate" class="text-center form-label mb-3" role="button">Saturation</label>
+                <input type="range" class="d-none form-range" id="saturate" min="1" max="100" value="100" step="1"
                   data-filter="saturate" data-scale="%" onchange="applyFilter()">
               </li>
               <li class="d-flex flex-column align-items-center">
-                <label for="blur" class="form-label">Blur</label>
-                <input type="range" class="form-range" id="blur" min="0" max="100" value="0" step="1" data-filter="blur"
-                  data-scale="px" onchange="applyFilter()">
+                <label for="invert" class="text-center form-label mb-3" role="button">Invert</label>
+                <input type="range" class="d-none form-range" id="invert" min="0" max="100" value="0" step="1"
+                  data-filter="invert" data-scale="%" onchange="applyFilter()">
               </li>
               <li class="d-flex flex-column align-items-center">
-                <label for="hue-rotate" class="form-label">Hue-Rotate</label>
-                <input type="range" class="form-range" id="hue-rotate" min="0" max="360" value="0" step="1"
+                <label for="hue-rotate" class="text-center form-label mb-3" role="button">Hue-Rotate</label>
+                <input type="range" class="d-none form-range" id="hue-rotate" min="0" max="360" value="0" step="1"
                   data-filter="hue-rotate" data-scale="deg" onchange="applyFilter()">
               </li>
             </ul>

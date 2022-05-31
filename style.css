@@ -1,9 +1,8 @@
 :root {
   --first-color: #132743;
-  --second-color: #ffcbcb;
+  --second-color: #ffd6d6;
   --third-color: #ffb5b5;
-  --btn-color: #407088;
-  --btn-border: #254555;
+  --btn-color: #254555;
 }
 
 * {
@@ -24,5 +23,16 @@ section#filters-container {
 }
 
 ul li {
+  width: 200px;
+  height: 100px;
   padding: 20px;
+}
+
+ul li label {
+  font-weight: bold;
+  width: 180px;
+  background-color: var(--third-color);
+  border-radius: 10px;
+  padding: 10px 20px;
+  color: var(--first-color) !important;
 }
